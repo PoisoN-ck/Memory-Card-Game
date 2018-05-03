@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             newImage.classList.add("cardImage");
             newImage.setAttribute("data-type", element);
             newImage.draggable = false; // To prevent from cheating as 0 opacity gets visible after draggin the object
-            let sourceImage = "../images/" + element +'.svg'; //Pasting the element name as a image name, because they are named same in the cards array
+            let sourceImage = "images/" + element +'.svg'; //Pasting the element name as an image name, because they are named same in the cards array
             newImage.src = sourceImage;
             newWrapElement.appendChild(card);
             card.appendChild(newImage);

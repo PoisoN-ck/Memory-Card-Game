@@ -154,6 +154,7 @@ button:focus {
 
 #mainGrid {
     margin: 0 auto;
+    margin-bottom: 48px;
     width: 600px;
     font-size: 0px;
     border: 10px solid #e0ca3c;
