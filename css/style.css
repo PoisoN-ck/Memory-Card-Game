@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gamja Flower', cursive;
+}
+
+body {
+    background-color: #7f7eff;
+    overflow-x: hidden;
+}
+
+body::after {
+    content: '';
+    opacity: 0;
+    transform: translateX(-100%);
+    transition-property: opacity, transform;
+    transition-duration: 1.5s, 0s;
+    transition-delay: 0s, 1.5s;
+    display: inline-block;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7), 
+        rgba(255, 255, 255, 0.7)
+        );
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+body.modalOpened::after {
+    content: '';
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1.5s;
+}
+
+header {
+    text-align: center;
+    padding: 25px 0px;
+}
+
+h1.generalStyles, h2.generalStyles {
+    font-size: 55px;
+}
+
+#mainPart {
+    text-align: center;
+}
+
+.generalStyles {
+    display: inline-block;
+    font-size: 28px;
+    color: #ffe100;
+}
+
+button:focus {
+    outline: 0;
+}
+
+#check { /*TEST BUTTON TO FINISH THE GAME*/
+    display: none;
+}
+
+#randomSelection {
+    background-color: #444;
+}
+
+.buttonsSet {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0px;
+}
+
+.generalButton {
+    vertical-align: top;
+    border: 5px solid #ffe100;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    background-color: #80a1d4;
+    color: #ffe100;
+    margin: 0px 4px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.buttonImage {
+    width: 100%;
+    height: 100%;
+}
+
+.generalButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px 5px rgba(30, 30, 30, 0.3);
+}
+
+.resultsContainer {
+    font-size: 0;
+    white-space: nowrap;
+    margin: 0 auto;
+    width: 600px;
+    padding-bottom: 8px;
+}
+
+.leftMainPart {
+    text-align: left;
+    width: 33%;
+    vertical-align: top;
+    padding-left: 48px;
+}
+
+.star {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/star.svg);
+    transition: 1s;
+}
+
+.threeStars .star {
+    background-image: url(../images/starFilled.svg);
+}
+
+.twoStars .star:nth-child(1), .twoStars .star:nth-child(2) {
+    background-image: url(../images/starFilled.svg);
+}
+
+.oneStar .star:nth-child(1) {
+    background-image: url(../images/starFilled.svg);
+}
+
+.centralMainPart {
+    text-align: center;
+    width: 33%;
+    padding-top: 8px;
+    display: inline-block;
+}
+
+.timer {
+    position: absolute;
+    transform: translateX(100%);
+    right: 50px;
+}
+
+.rightMainPart {
+    text-align: right;
+    width: 33%;
+    vertical-align: top;
+    position: relative;
+    padding-right: 58px;
+}
+
+#mainGrid {
+    margin: 0 auto;
+    width: 600px;
+    font-size: 0px;
+    border: 10px solid #e0ca3c;
+    border-radius: 20px;
+    background-color: #c9ddff;
+    padding: 10px;
+}
+
+.cardContainer {
+    display: inline-block;
+    width: 25%;
+    font-size: 0;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.card {
+    border-radius: 15px;
+    border: 5px #e0ca3c solid;
+    background-color: #5b618a;
+}
+
+.cardImage {
+    border-radius: 15px;
+    opacity: 0;
+    font-size: 0;
+    width: 100%;
+    transition-duration: 1s;
+}
+
+.cardImageAppear {
+    transition-duration: 1s;
+    opacity: 100;
+    font-size: 0;
+}
+
+.modalWindow {
+    z-index: 10;
+    transition: opacity 1s, transform 1.5s;
+    opacity: 0.1;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transform: translateY(-160%);
+    margin: 200px auto;
+    width: 700px;
+    height: 700px;
+    border: 10px solid #ffe100;
+    border-radius: 50px;
+    background-color: #7f7eff;
+    box-shadow: 0 0 6px 6px rgba(30, 30, 30, 0.15);
+}
+
+.modalWindowContent {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.modalWindowShow {
+    transition: opacity 1s, transform 1.5s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.generalText {
+    font-size: 28px;
+    color: #ffe100;
+}
+
+.modalWindow .rightMainPart {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    width: 50%;
+}
+
+.modalWindow .leftMainPart {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 50%;
+}
+
+.modalWindow .centralMainPart {
+    width: 100%;
+}
+
+.modalWindow .star {
+    height: 75px;
+    width: 75px;
+    margin: 10px;
+}
+
+#resetButton {
+    margin-top: 75px;
+    height: 150px;
+    width: 150px;
+}

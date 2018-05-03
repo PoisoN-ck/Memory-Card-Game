@@ -1,0 +1,186 @@
+
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    
+    body {
+        overflow-y: hidden;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    h1.generalStyles, h2.generalStyles {
+        font-size: 48px;
+    }
+
+    .buttonsSet {
+        padding: 22px 0px;
+    }
+
+    .generalButton {
+        width: 80px;
+        height: 80px;
+        margin: 0px 2px;
+    }
+
+    .resultsContainer {
+        width: 100%;
+        padding-bottom: 2px;
+    }
+    
+    .leftMainPart {
+        padding-left: 30px;
+    }
+    
+    .timer {
+        transform: translateX(90%);
+        right: 45px;
+    }
+
+    .star {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .rightMainPart {
+        padding-right: 55px;
+    }
+
+    #mainGrid {
+        width: 100%;
+        border: 5px solid #e0ca3c;
+        padding: 5px;
+    }
+
+    .cardContainer {
+        padding: 2px;
+    }
+
+    .card {
+        border: 2px #e0ca3c solid;
+    }
+
+    .modalWindow {
+        margin: 20px 0;
+        width: 100%;
+        height: 90%;
+        border: 8px solid #ffe100;
+    }
+
+    .modalWindow .rightMainPart {
+        right: 5px;
+    }
+    
+    .modalWindow .leftMainPart {
+        left: 5px;
+    }
+    
+    .modalWindow .centralMainPart {
+        width: 100%;
+    }
+    
+    .modalWindow .star {
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+  
+  }
+
+  @media screen and (max-width: 400px) {
+    
+    body {
+        overflow-y: hidden;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .generalStyles {
+        font-size: 24px;
+    }
+
+    h1.generalStyles, h2.generalStyles {
+        font-size: 40px;
+    }
+
+    .buttonsSet {
+        padding: 20px 0px;
+    }
+
+    .generalButton {
+        width: 60px;
+        height: 60px;
+    }
+
+    .resultsContainer {
+        width: 100%;
+        padding-bottom: 4px;
+    }
+    
+    .leftMainPart {
+        padding-left: 20px;
+    }
+
+    .centralMainPart {
+        padding-top: 4px;
+    }    
+    
+    .timer {
+        right: 40px;
+    }
+
+    .rightMainPart {
+        padding-right: 45px;
+    }
+
+    #mainGrid {
+        width: 100%;
+        border: 5px solid #e0ca3c;
+        padding: 3px;
+    }
+
+    .cardContainer {
+        padding: 1px;
+    }
+
+    .card {
+        border: 2px #e0ca3c solid;
+    }
+
+    .modalWindow {
+        margin: 20px 0;
+        width: 100%;
+        height: 90%;
+        border: 8px solid #ffe100;
+    }
+
+    .modalWindow .rightMainPart {
+        width: 50%;
+        right: 10px;
+    }
+    
+    .modalWindow .leftMainPart {
+        width: 50%;
+        left: 10px;
+    }
+    
+    .modalWindow .centralMainPart {
+        width: 100%;
+    }
+    
+    .modalWindow .star {
+        height: 75px;
+        width: 75px;
+        margin: 10px;
+    }
+
+    #resetButton {
+        margin-top: 25px;
+        height: 140px;
+        width: 140px;
+    }
+  
+  }

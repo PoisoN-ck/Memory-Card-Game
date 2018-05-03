@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css?family=Gamja+Flower" rel="stylesheet">
+    <title>Memory Card Game</title>
+</head>
+<body>
+    <header>
+        <h1 class="generalStyles ">Memory Card Game</h1>
+    </header>
+
+    <main id="mainPart">
+        <div class="buttonsSet">
+            <button id="check" class="generalButton">Finish</button>
+            <button id="randomSelection" class="generalButton"><img class="buttonImage" src="images/question.svg" alt="Random Set"></button>
+            <button id="emotions" class="generalButton"><img class="buttonImage" src="images/happy.svg" alt="Emotions Set"></button>
+            <button id="animals" class="generalButton"><img class="buttonImage" src="images/lion.svg" alt="Animals Set"></button>
+            <button id="foodDrinks" class="generalButton"><img class="buttonImage" src="images/coffee.svg" alt="Food & Drinks Set"></button>
+        </div>
+        <div class="resultsContainer">
+            <div class="generalStyles leftMainPart">Moves: <span class="movesCount">0</span></div>
+            <div class="centralMainPart">
+                <div class="starsContainer threeStars">
+                    <span class="star"></span>
+                    <span class="star"></span>
+                    <span class="star"></span>
+                </div>
+            </div>
+            <div class="generalStyles rightMainPart">Timer: <span class="timer">0</span></div>
+        </div>
+        <div id="mainGrid"></div>
+        <div class="modalWindow">
+            <div class="modalWindowContent">
+                <h2 class="generalStyles">Congratulations!</h2>
+                <p class="generalText">You've guessed all cards!</p>
+                <p class="generalText">Your results:</p>
+                <div class="resultsContainer">
+                    <div class="centralMainPart">
+                        <div class="starsContainer threeStars">
+                            <span class="star"></span>
+                            <span class="star"></span>
+                            <span class="star"></span>
+                        </div>
+                    </div>
+                </div>
+                <button id="resetButton" class="generalButton"><img class="buttonImage" src="images/newgame.svg" alt="New Game"></button>
+                <div class="generalStyles rightMainPart">Timer: <span class="timer">0</span></div>
+                <div class="generalStyles leftMainPart">Moves: <span class="movesCount">0</span></div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
