@@ -83,11 +83,11 @@
   }
 
   @media screen and (max-width: 400px) {
-
-    body::after {
-        display: none;
-    }
     
+    body::after {
+        bottom: -110px;
+    }
+
     .generalStyles {
         font-size: 24px;
     }
@@ -132,6 +132,10 @@
 
     .cardContainer {
         padding: 1px;
+    }
+
+    .modalWindow {
+        margin-top: 90px;
     }
 
     .modalWindow .rightMainPart {

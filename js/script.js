@@ -121,6 +121,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function overallReset() { //Includes all reset functions
+        isCardCheckingState = false;
+        isGameStarted = false;
         gridRemove();
         clearInterval(timerInAction);
         movesCountReset();
@@ -205,42 +207,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     resetButton.addEventListener('click', function(){ //When New game button in the pop up is clicked to build a new random grid of 3 possible sets
-        isCardCheckingState = false;
-        isGameStarted = true;
         modalDisappear();
-        overallReset()
+        overallReset();
         randomGrid = cardsList[Math.round(Math.random() * 2)];
         gridBuild(createRandomGrid(randomGrid));
     });
 
     randomSelection.addEventListener('click', function(){ //When Random game button is clicked to build a new random grid of 3 possible sets 
-        isCardCheckingState = false;
-        isGameStarted = true;
-        overallReset()
+        overallReset();
         randomGrid = cardsList[Math.round(Math.random() * 2)];
         gridBuild(createRandomGrid(randomGrid));
     });
 
     emotionsSet.addEventListener('click', function() { //Emotions grid build when emotions button is clicked
-        isCardCheckingState = false;
-        isGameStarted = true;
-        overallReset()
+        overallReset();
         randomGrid = cardsList[0];
         gridBuild(createRandomGrid(randomGrid));
     });
     
     foodDrinksSet.addEventListener('click', function() { //Food & Drinks grid build when Food & Drinks button is clicked
-        isCardCheckingState = false;
-        isGameStarted = true;
-        overallReset()
+        overallReset();
         randomGrid = cardsList[1];
         gridBuild(createRandomGrid(randomGrid));
     });
 
     animalsSet.addEventListener('click', function() { //Animals grid build when Animals button is clicked
-        isCardCheckingState = false;
-        isGameStarted = true;
-        overallReset()
+        overallReset();
         randomGrid = cardsList[2];
         gridBuild(createRandomGrid(randomGrid));
     });
