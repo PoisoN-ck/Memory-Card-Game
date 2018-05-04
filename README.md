@@ -40,4 +40,8 @@ User cannot click anywhere when both cards didn't match and are in disappearing 
 
 Guessed all cards? Congratulations! You can start a New game once again by clicking a New game button which will give you **Random** set of cards.
 
+# Game dependencies
+
+The game was built on pure JavaScript and CSS to increase the performance and load time.
+
 
