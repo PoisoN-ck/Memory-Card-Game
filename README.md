@@ -42,6 +42,6 @@ Guessed all cards? Congratulations! You can start a New game once again by click
 
 # Game dependencies
 
-The game was built on pure JavaScript and CSS to increase the performance and load time.
+The game was built on pure JavaScript and CSS to increase the performance and load time. Font Gamja Flower has been taken from Google fonts page(https://fonts.googleapis.com/css?family=Gamja+Flower) and is connected to that url.
 
 

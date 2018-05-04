@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     
     function createRandomGrid(array) { // Function to create random array from already existing one
-        var arrayElements = array.length,
+        let arrayElements = array.length,
         temp, 
         index;
         while (arrayElements > 0) {
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.add('modalOpened');
             let modalWindow = document.querySelector('.modalWindow');
             modalWindow.classList.add('modalWindowShow');
-        }, 1500)
+        }, 1500);
     }
 
     function modalDisappear() { //Hide pop up to start a new game
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     hideCard(savedCard);
                     hideCard(target);
                     isControlBlocked = false;
-                }, CARD_HIDE_TIME)
+                }, CARD_HIDE_TIME);
             }
             isCardCheckingState = false; //Checked the cards pair, the next click with open the first card of possible matching/non-matching pair
             movesCountAdded();
